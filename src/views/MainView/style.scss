@@ -1,0 +1,33 @@
+@import '../../styles/style.config.scss';
+
+.todo-app-main-view{
+	@media (min-width: 899px){
+		width: auto;
+	}
+	.main{
+		position: $main_position;
+		z-index: $main_z_index;
+		border-top: $main_border_top;
+		.toggle-all {
+			width: $toggle_all_width;
+			height: $toggle_all_height;
+			border: $toggle_all_border;
+			opacity: $toggle_all_opacity;
+			@include position($toggle_all_position);
+		}
+		.toggle-all + label {
+			width: $toggle_label_width;
+			height: $toggle_label_height;
+			font-size: $toggle_label_font_size;
+			@include position($toggle_label_position);
+			@include transform($toggle_label_transform);
+			&:before {
+			content: $toggle_label_before_content;
+			font-size: $toggle_label_before_font_size;
+			color: $toggle_label_before_color;
+			padding: $toggle_label_before_padding;
+		}
+		}
+		
+	}
+} 

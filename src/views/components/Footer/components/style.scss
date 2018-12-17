@@ -1,0 +1,12 @@
+@import '../../../../styles/style.config.scss';
+
+.todo-app-link {
+	@include marginAndPadding($todo-app-link_margin-padding);
+	text-decoration: $todo-app-link_text-decoration;
+	border: $todo-app-link_border;
+	border-radius: $todo-app-link_border-radius;
+	&.selected {
+		border-color: $todo-app-link_selected_border-color;
+	}
+}
+

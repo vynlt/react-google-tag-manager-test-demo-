@@ -1,0 +1,57 @@
+@import './style.config.scss';
+
+
+html{
+	margin: 0;
+	padding: 0;
+	body{
+		@include font($body_font);
+		@include marginAndPadding($body_margin-padding);
+		@include color($body_color);
+		@include width($body_width);
+		@extend .font-smoothing;
+		.todo-app {
+			&> *{
+				@include color($todo_app_color);
+				@include position($todo_app_position);
+				box-shadow: $todo_app_box_shadow;
+			}
+			h1{
+				@include color($h1_color);
+				@include position($h1_position);
+				@include width($h1_width);
+				@include font($h1_font);
+				text-align: $h1_text_align;
+			}
+		}
+		button {
+			@include marginAndPadding((0, 0));
+			border: 0;
+			background: none;
+			font-size: 100%;
+			vertical-align: baseline;
+			@extend .font-smoothing;
+			@include appearance(none);
+		}
+	}
+}
+
+
+span{
+	margin-left: 10px;
+}
+
+.navbar, .todo-app-main-view{
+	box-sizing: border-box;
+	margin: 0 auto 0 auto;
+	max-width: 550px;
+}
+
+.btn{
+	margin-right: 10px
+}
+
+
+
+
+

@@ -1,0 +1,83 @@
+@import '../../../../styles/style.config.scss';
+
+.todo-app-todo-item {
+	position: $todo-app-todo-item_position;
+	font-size: $todo-app-todo-item_font-size;
+	border-bottom: $todo-app-todo-item_border-bottom;
+	.toggle {
+		text-align: $toggle_text-align;
+		width: $toggle_width;
+		height: $toggle_height;
+		@include position($toggle_position);
+		margin: $toggle_margin;
+		border: $toggle_border;
+		@include appearance($toggle_-webkit-appearance);
+		opacity: $toggle_opacity;
+		+ label {
+			background-image: $toggle_label_background-image;
+			background-repeat: $toggle_label_background-repeat;
+			background-position: $toggle_label_background-position;
+		}
+		
+	}
+	.toggle:checked + label {
+			background-image: $toggle_label_checked_background-image;
+		}
+	label {
+		word-break: $label_word-break;
+		padding: $label_padding;
+		display: $label_display;
+		line-height: $label_line-height;
+		transition: $label_transition;
+	}
+	.edit {
+		@include marginAndPadding($edit_margin-padding);
+		position: $edit_position;
+		width: $edit_width;
+		font-size: $edit_font-size;
+		line-height: $edit_line-height;
+		border: $edit_border;
+		border: $edit_border;
+		box-shadow: $edit_box-shadow;
+		box-sizing: $edit_box-sizing;
+		@extend .font-smoothing;
+		display: $edit_display;
+	}
+	.destroy {
+		display: $destroy_display;
+		@include position($destroy_position);
+		position: $destroy_position;
+		width: $destroy_width;
+		height: $destroy_height;
+		margin: $destroy_margin;
+		font-size: $destroy_font-size;
+		color: $destroy_color;
+		margin-bottom: $destroy_margin-bottom;
+		transition: $destroy_transition;
+		&:hover {
+			color: $destroy_hover_color;
+		}
+		&:after {
+			content: $destroy_after_content;
+		}
+	}
+	&:last-child {
+		border-bottom: $todo-app-todo-item_last-child_border-bottom;
+	}
+	&:hover .destroy {
+		display: $todo-app-todo-item_hover_display;
+	}
+	&.editing {
+		border-bottom: $editing_border-bottom;
+		padding: $editing_padding;
+		.edit {
+			display: $edit_display;
+			width: $edit_width;
+			@include marginAndPadding($edit_margin-padding);
+		}
+		.view {
+			display: $view_display;
+		}
+	}
+}
+

@@ -1,0 +1,39 @@
+@import '../../../styles/style.config.scss';
+
+.todo-app-footer {
+	color: $todo-app-footer_color;
+	padding: $todo-app-footer_padding;
+	height: $todo-app-footer_height;
+	text-align: $todo-app-footer_text-align;
+	border-top: $todo-app-footer_border-top;
+	.todo-count {
+		float: $todo-count_float;
+		text-align: $todo-count_text-align;
+	}
+	.filters {
+		@include marginAndPadding($filters_margin-padding);
+		list-style: $filters_list-style;
+		@include position($filters_position);
+		li {
+			display: $li_display;
+		}
+	}
+	.clear-completed{
+		float: $clear-completed_float;
+		position: $clear-completed_position;
+		line-height: $clear-completed_line-height;
+		text-decoration: $clear-completed_text-decoration;
+		cursor: $clear-completed_cursor;
+		&:active {
+			@extend .clear-completed;
+		}
+	}
+	&:before {
+		@include position($todo-app-footer_before_position);
+		content: $todo-app-footer_before_content;
+		height: $todo-app-footer_before_height;
+		overflow: $todo-app-footer_before_overflow;
+		box-shadow: $todo-app-footer_before_box-shadow;
+	}
+}
+

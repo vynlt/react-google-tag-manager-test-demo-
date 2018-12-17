@@ -1,0 +1,102 @@
+$body_width: false, 230px, 56%;
+
+$todo_app_box_shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.2), 0 25px 50px 0 rgba(0, 0, 0, 0.1);
+
+$h1_width: 100%, false, false;
+$h1_text_align: center;
+
+$main_border_top: 1px solid #e6e6e6;
+
+$toggle_all_width: 1px;
+$toggle_all_height: 1px;
+$toggle_all_border: none;
+$toggle_all_opacity: 0;
+
+$toggle_label_width: 60px;
+$toggle_label_height: 34px;
+
+$toggle_label_transform: rotate(90deg);
+$toggle_label_before_content: '❯';
+
+$todo-app-todo-list_list_style: none; 
+
+$todo-app-todo-item_border-bottom: 1px solid #ededed;
+
+$toggle_text-align: center;
+$toggle_width: 40px;
+$toggle_height: auto;
+$toggle_border: none;
+$toggle_-webkit-appearance: none;
+$toggle_opacity: 0;
+
+$toggle_label_background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23ededed%22%20stroke-width%3D%223%22/%3E%3C/svg%3E');
+$toggle_label_background-repeat: no-repeat;
+$toggle_label_background-position: center left;
+
+$toggle_label_checked_background-image: url('data:image/svg+xml;utf8,%3Csvg%20xmlns%3D%22http%3A//www.w3.org/2000/svg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%22-10%20-18%20100%20135%22%3E%3Ccircle%20cx%3D%2250%22%20cy%3D%2250%22%20r%3D%2250%22%20fill%3D%22none%22%20stroke%3D%22%23bddad5%22%20stroke-width%3D%223%22/%3E%3Cpath%20fill%3D%22%235dc2af%22%20d%3D%22M72%2025L42%2071%2027%2056l-4%204%2020%2020%2034-52z%22/%3E%3C/svg%3E');
+
+$label_word-break: break-all;
+
+$label_display: block;
+
+$label_transition: color 0.4s;
+
+$edit_width: 100%;
+
+$edit_border: 1px solid #999;
+$edit_box-shadow: inset 0 -1px 5px 0 rgba(0, 0, 0, 0.2);
+$edit_box-sizing: border-box;
+$edit_display: none;
+
+$destroy_display: none;
+$destroy_width: 40px;
+$destroy_height: 40px;
+$destroy_transition: color 0.2s ease-out;
+$destroy_after_content: '×';
+
+$todo-app-todo-item_last-child_border-bottom: none;
+$todo-app-todo-item_hover_display: block;
+
+$editing_border-bottom: none;
+
+$edit_display: block;
+$edit_width: 88%;
+
+$view_display: none;
+
+$todo-app-todo-input_width: 100%;
+$todo-app-todo-input_box-sizing: border-box;
+$todo-app-todo-input_border: none;
+$todo-app-todo-input_box-shadow: inset 0 -2px 1px rgba(0,0,0,0.03);
+
+$todo-app-footer_height: 35px;
+$todo-app-footer_text-align: center;
+$todo-app-footer_border-top: 1px solid #e6e6e6;
+
+$todo-count_float: left;
+$todo-count_text-align: left;
+
+$filters_list-style: none;
+
+$li_display: inline;
+
+$clear-completed_float: right;
+
+$clear-completed_text-decoration: none;
+$clear-completed_cursor: pointer;
+
+$todo-app-footer_before_content: '';
+
+$todo-app-footer_before_height: 50px;
+$todo-app-footer_before_overflow: hidden;
+$todo-app-footer_before_box-shadow: 
+0 1px 1px rgba(0, 0, 0, 0.2), 
+0 8px 0 -3px #f6f6f6, 
+0 9px 1px -3px rgba(0, 0, 0, 0.2), 
+0 16px 0 -6px #f6f6f6, 
+0 17px 2px -6px rgba(0, 0, 0, 0.2);
+
+$todo-app-link_text-decoration: none;
+$todo-app-link_border: 1px solid transparent;
+$todo-app-link_border-radius: 3px;
+

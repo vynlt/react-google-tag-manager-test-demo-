@@ -1,0 +1,47 @@
+$body_margin-padding: (0 auto), false;
+
+$todo_app_margin-padding: (0 0 0 0), false;
+$todo_app_position: false, false, false, false, relative;
+
+$h1_position: 0, false, false, false, relative;
+
+$main_position: relative;
+$main_z_index: 2;
+
+$toggle_all_position: false, 100%, 100%, false, absolute;
+$toggle_label_position: -52px, false, false, -13px, absolute;
+
+$toggle_label_before_padding: 10px 27px 10px 27px;
+
+$todo-app-todo-list_margin-padding: 0, 0;
+$todo-app-todo-item_position: relative;
+
+$toggle_position: 0, false, 0, false, absolute;
+$toggle_margin: auto 0;
+
+$label_padding: 8px 8px 8px 45px;
+
+$edit_position: relative;
+$edit_margin-padding: 0, 6px;
+
+$destroy_position: 0, 10px, 0, false, absolute;
+$destroy_margin: auto 0;
+$destroy_margin-bottom: 11px;
+
+$editing_padding: 0;
+
+$edit_margin-padding: (0 0 0 43px), (12px 16px);
+
+$todo-app-todo-input_position: relative;
+$todo-app-todo-input_margin-padding: 0, (16px 16px 16px 60px);
+
+$todo-app-footer_padding: 10px 15px;
+
+$filters_margin-padding: 0, 0;
+$filters_position: false, 0, false, 0, absolute;
+
+$clear-completed_position: relative;
+
+$todo-app-footer_before_position: false, 0,0 ,0, absolute;
+
+$todo-app-link_margin-padding: 3px, (3px 7px);

@@ -1,0 +1,83 @@
+@import './color.config.scss';
+@import './position.config.scss';
+@import './appearance.config.scss';
+@import './font.config.scss';
+
+.font-smoothing{
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+@mixin transform($property) {
+	-webkit-transform: $property;
+	-ms-transform: $property;
+	transform: $property;
+}
+
+@mixin appearance($property) {
+	-webkit-appearance: $property;
+	-ms-appearance: $property;
+}
+
+@mixin marginAndPadding($args){
+	@if nth($args, 1) != false {
+		margin: nth($args, 1);
+	}
+	@if nth($args, 2) != false {
+		padding: nth($args, 2);
+	}
+}
+
+@mixin color($args){
+	@if nth($args, 1) != false {
+		color: nth($args, 1);
+	}
+	@if nth($args, 2) != false {
+		background: nth($args, 2);
+	}
+}
+
+@mixin font($args){
+	@if nth($args, 1) != false {
+		font: nth($args, 1);
+	}
+	@if nth($args, 2) != false {
+		font-weight: nth($args, 2);
+	}
+	@if nth($args, 3) != false {
+		font-size: nth($args, 3);
+	}
+	@if nth($args, 4) != false {
+		line-height: nth($args, 4);
+	}
+}
+
+@mixin width($args){
+	@if nth($args, 1) != false {
+		width: nth($args, 1);
+	}
+	@if nth($args, 2) != false {
+		min-width: nth($args, 2);
+	}
+	@if nth($args, 3) != false {
+		max-width: nth($args, 3);
+	}
+}
+
+@mixin position($args){
+	@if nth($args, 1) != false {
+		top: nth($args, 1);
+	}
+	@if nth($args, 2) != false {
+		right: nth($args, 2);
+	}
+	@if nth($args, 3) != false {
+		bottom: nth($args, 3);
+	}
+	@if nth($args, 4) != false {
+		left: nth($args, 4);
+	}
+	@if nth($args, 5) != false {
+		position: nth($args, 5);
+	}
+}

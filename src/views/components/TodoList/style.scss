@@ -1,0 +1,6 @@
+@import '../../../styles/style.config.scss';
+
+.todo-app-todo-list {
+	@include marginAndPadding($todo-app-todo-list_margin-padding);
+	list-style: $todo-app-todo-list_list_style;
+}

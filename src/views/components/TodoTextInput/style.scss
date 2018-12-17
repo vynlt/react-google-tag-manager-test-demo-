@@ -1,0 +1,13 @@
+@import '../../../styles/style.config.scss';
+
+.todo-app-todo-input{
+	position: $todo-app-todo-input_position;
+    @include marginAndPadding($todo-app-todo-input_margin-padding);
+    width: $todo-app-todo-input_width;
+    @include font($todo-app-todo-input_font);
+    box-sizing: $todo-app-todo-input_box-sizing;
+    @extend .font-smoothing;
+    border: $todo-app-todo-input_border;
+    background: $todo-app-todo-input_background;
+    box-shadow: $todo-app-todo-input_box-shadow;
+}
